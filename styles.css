@@ -38,10 +38,3 @@ h1 {
     margin-right: 10px;
 }
 
-.total {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 0;
-    font-weight: bold;
-    margin-top: 20px;
-}
