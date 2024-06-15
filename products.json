@@ -1,17 +1,24 @@
 [
-    {
-        "name": "Item 1",
-        "price": 10.00,
-        "image": "icon.png"
-    },
-    {
-        "name": "Item 2",
-        "price": 15.00,
-        "image": "icon.png"
-    },
-    {
-        "name": "Item 3",
-        "price": 20.00,
-        "image": "icon.png"
-    }
+    {"name": "طاجن ملوخية","price": 40,"image": "icon.png"},
+    {"name": "دجاجة بدون ارز","price": 270,"image": "icon.png"},
+    {"name": "طاجن بطاطس باللحمة","price": 195,"image": "icon.png"},
+    {"name": "طاجن بامية باللحمة","price": 200,"image": "icon.png"},
+    {"name": "شوربة لسان عصفور","price": 20,"image": "icon.png"},
+    {"name": "مياه معدنية","price": 10,"image": "icon.png"},
+    {"name": "حمام مشوي","price": 130,"image": "icon.png"},
+    {"name": "كيلو كفتة","price": 500,"image": "icon.png"},
+    {"name": "ارز كبسة","price": 15,"image": "icon.png"},
+    {"name": "ورق عنب","price": 50,"image": "icon.png"},
+    {"name": "سلطة خضراء","price": 20,"image": "icon.png"},
+    {"name": "سلطة طحينة","price": 15,"image": "icon.png"},
+    {"name": "نصف دجاجة","price": 155,"image": "icon.png"},
+    {"name": "ربع دجاجة","price": 85,"image": "icon.png"},
+    {"name": "نص كفتة","price": 220,"image": "icon.png"},
+    {"name": "ربع كفتة","price": 120,"image": "icon.png"},
+    {"name": "محاشي (مشكل)","price": 75,"image": "icon.png"},
+    {"name": "ممبار","price": 73,"image": "icon.png"},
+    {"name": "كيلو محاشي ","price": 230,"image": "icon.png"},
+    {"name": "كيلو ممبار","price": 230,"image": "icon.png"},
+    {"name": "شيش طاووق","price": 520,"image": "icon.png"},
+    {"name": "بطاطس فرم","price": 15,"image": "icon.png"}
 ]
