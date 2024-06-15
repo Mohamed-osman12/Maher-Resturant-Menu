@@ -18,10 +18,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 itemElement.innerHTML = itemContent;
                 billContainer.appendChild(itemElement);
 
-                totalPrice += item.price;
-            });
+           });
 
-            document.getElementById('total-price').textContent = `$${totalPrice.toFixed(2)}`;
+
         })
         .catch(error => console.error('Error loading JSON:', error));
 });
