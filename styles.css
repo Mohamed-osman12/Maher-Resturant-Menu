@@ -28,6 +28,7 @@ h1 {
 .item {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 10px 0;
     border-bottom: 1px solid #ccc;
 }
@@ -38,3 +39,16 @@ h1 {
     margin-right: 10px;
 }
 
+.item span {
+    font-size: 1.2em; /* تعديل حجم الخط لكل النصوص داخل العنصر */
+}
+
+.item .name {
+    flex-grow: 1;
+    margin-left: 10px;
+    font-size: 1.4em; /* تعديل حجم الخط لاسم المنتج */
+}
+
+.item .price {
+    font-size: 1.4em; /* تعديل حجم الخط للسعر */
+}
