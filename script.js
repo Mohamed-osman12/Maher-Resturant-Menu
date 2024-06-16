@@ -10,9 +10,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 itemElement.classList.add('item');
 
                 const itemContent = `
-                    <img src="${item.image}" alt="{item.name}ج.م">
+                    <img src="${item.image}" alt="${item.name}">
                     <span>${item.name}</span>
-                    <span>$${item.price.toFixed(2)}</span>
+                    <span>${item.price.toFixed(2)}ج.م</span>
                 `;
 
                 itemElement.innerHTML = itemContent;
