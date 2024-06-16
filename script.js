@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 const itemContent = `
                     <img src="${item.image}" alt="${item.name}">
                     <span>${item.name}</span>
-                    <span>ج.م${item.price.toFixed(2)}</span>
+                    <span>${item.price.toFixed(2)ج.م}</span>
                 `;
 
                 itemElement.innerHTML = itemContent;
