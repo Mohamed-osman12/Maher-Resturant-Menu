@@ -1,26 +1,36 @@
 document.addEventListener("DOMContentLoaded", function() {
+    let allData = [];
+
     fetch('products.json')
         .then(response => response.json())
         .then(data => {
-            const billContainer = document.getElementById('bill');
-            let totalPrice = 0;
+            allData = data;
+            displayCategory('main');
+        })
+        .catch(error => console.error('Error loading JSON:', error));
 
-            data.forEach(item => {
-                const itemElement = document.createElement('div');
-                itemElement.classList.add('item');
-
+    document.querySelectorAll('.category-btn').forEach(button => {
+        button.addEventListener('click', () => {
+            const category = button.getAttribute('data-category');
+            displayCategory(category);
+        });
+    });
+    function displayCategory(category) {
+        const billContainer = document.getElementById('bill');
+        billContainer.innerHTML = ''; // Clear previous content
+      
                 const itemContent = `
                     <img src="${item.image}" alt="${item.name}">
                     <span>${item.name}</span>
                     <span class="price">${item.price.toFixed(2)} ج.م</span>
                 `;
 
-                itemElement.innerHTML = itemContent;
-                billContainer.appendChild(itemElement);
 
-           });
+        const filteredData = allData.filter(item => item.category === category);
 
-
-        })
-        .catch(error => console.error('Error loading JSON:', error));
+        filteredData.forEach(item => {
+            const itemElement = document.createElement('div');
+            itemElement.classList.add('item');
+        });
+    }
 });
