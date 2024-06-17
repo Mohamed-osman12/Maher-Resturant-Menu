@@ -1,26 +1,39 @@
 document.addEventListener("DOMContentLoaded", function() {
+    let allData = [];
+
     fetch('products.json')
         .then(response => response.json())
         .then(data => {
-            const billContainer = document.getElementById('bill');
-            let totalPrice = 0;
-
-            data.forEach(item => {
-                const itemElement = document.createElement('div');
-                itemElement.classList.add('item');
-
-                const itemContent = `
-                    <img src="${item.image}" alt="${item.name}">
-                    <span>${item.name}</span>
-                    <span>$${item.price.toFixed(2)}</span>
-                `;
-
-                itemElement.innerHTML = itemContent;
-                billContainer.appendChild(itemElement);
-
-           });
-
-
+            allData = data;
+            displayCategory('main');
         })
         .catch(error => console.error('Error loading JSON:', error));
+
+    document.querySelectorAll('.category-btn').forEach(button => {
+        button.addEventListener('click', () => {
+            const category = button.getAttribute('data-category');
+            displayCategory(category);
+        });
+    });
+
+    function displayCategory(category) {
+        const billContainer = document.getElementById('bill');
+        billContainer.innerHTML = ''; // Clear previous content
+
+        const filteredData = allData.filter(item => item.category === category);
+
+        filteredData.forEach(item => {
+            const itemElement = document.createElement('div');
+            itemElement.classList.add('item');
+
+            const itemContent = `
+                <img src="${item.image}" alt="${item.name}">
+                <span class="name">${item.name}</span>
+                <span class="price">${item.price.toFixed(2)} ج.م</span>
+            `;
+
+            itemElement.innerHTML = itemContent;
+            billContainer.appendChild(itemElement);
+        });
+    }
 });
