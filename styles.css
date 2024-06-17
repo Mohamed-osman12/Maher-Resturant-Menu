@@ -34,14 +34,14 @@ h1 {
 .category-btn {
     padding: 10px 20px;
     border: none;
-    background-color: #007bff;
+    background-color: #fb7792;
     color: white;
     border-radius: 4px;
     cursor: pointer;
 }
 
 .category-btn:hover {
-    background-color: #0056b3;
+    background-color: #f7466a;
 }
 
 .category-container {
