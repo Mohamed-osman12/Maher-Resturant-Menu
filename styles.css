@@ -63,14 +63,16 @@ h1 {
 
 .item span {
     font-size: 1.2em;
+    font-size: 1.2em; /* تعديل حجم الخط لكل النصوص داخل العنصر */
 }
 
 .item .name {
     flex-grow: 1;
     margin-left: 10px;
-    font-size: 1.4em;
+    font-size: 1.4em; /* تعديل حجم الخط لاسم المنتج */
 }
 
 .item .price {
-    font-size: 1.4em;
+    font-size: 1.4em; /* تعديل حجم الخط للسعر */
+
 }

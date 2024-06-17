@@ -15,25 +15,22 @@ document.addEventListener("DOMContentLoaded", function() {
             displayCategory(category);
         });
     });
-
     function displayCategory(category) {
         const billContainer = document.getElementById('bill');
         billContainer.innerHTML = ''; // Clear previous content
+      
+                const itemContent = `
+                    <img src="${item.image}" alt="${item.name}">
+                    <span>${item.name}</span>
+                    <span class="price">${item.price.toFixed(2)} ج.م</span>
+                `;
+
 
         const filteredData = allData.filter(item => item.category === category);
 
         filteredData.forEach(item => {
             const itemElement = document.createElement('div');
             itemElement.classList.add('item');
-
-            const itemContent = `
-                <img src="${item.image}" alt="${item.name}">
-                <span class="name">${item.name}</span>
-                <span class="price">${item.price.toFixed(2)} ج.م</span>
-            `;
-
-            itemElement.innerHTML = itemContent;
-            billContainer.appendChild(itemElement);
         });
     }
 });
