@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
         .then(response => response.json())
         .then(data => {
             allData = data;
-            displayCategory('main');
+            displayCategory('m');
         })
         .catch(error => console.error('Error loading JSON:', error));
 
