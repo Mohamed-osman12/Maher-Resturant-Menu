@@ -1,5 +1,5 @@
 [{
-    "name": "طاجن ملوخية","price": 40,"image": "pics\\1.jpg","category": "c"},
+    "name": "طاجن ملوخية","price": 40,"image": "pics/1.jpg","category": "c"},
     {"name": "دجاجة بدون ارز","price": 270,"image": "pics/2.jpg","category": "m"},    
     {"name": "طاجن بطاطس باللحمة","price": 195,"image": "pics/3.jpg","category": "c"},
     {"name": "طاجن بامية باللحمة","price": 200,"image": "pics/4.jpg","category": "c"},
