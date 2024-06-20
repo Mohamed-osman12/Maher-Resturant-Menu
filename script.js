@@ -11,7 +11,7 @@ function updateCartTotal() {
   cartItems.forEach(item => {
     cartTotal += item.price * item.quantity;
   });
-  cartTotalElement.textContent = `المجموع: ${cartTotal.toFixed(2)} ريال`;
+  cartTotalElement.textContent = `المجموع: ${cartTotal.toFixed(2)} ج.م`;
 }
 
 function addToCart(item) {
