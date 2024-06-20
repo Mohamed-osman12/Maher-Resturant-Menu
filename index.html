@@ -1,28 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Maher Restaurant Menu</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maher Restaurant Menu</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <h1>مطعم ماهر</h1>
-    <div class="categories">
-      <button class="category-btn" data-category="m">اطباق رئيسية</button>
-      <button class="category-btn" data-category="c">طواجن</button>
-      <button class="category-btn" data-category="a">مقبلات</button>
-      <button class="category-btn" data-category="d">مشروبات</button>
+    <div class="container">
+        <h1>مطعم ماهر</h1>
+        <div class="categories">
+            <button class="category-btn" data-category="m">اطباق رئيسية</button>
+            <button class="category-btn" data-category="c">طواجن</button>
+            <button class="category-btn" data-category="a">مقبلات</button>
+            <button class="category-btn" data-category="d">مشروبات</button>
+        </div>
+        <div id="bill" class="category-container"></div>
     </div>
-    <div id="bill" class="category-container"></div>
-    <button id="cart-btn">سلة التسوق</button>
-    <div id="cart" class="category-container hidden">
-      <h2>سلة التسوق</h2>
-      <ul id="cart-items"></ul>
-      <div id="cart-total">المجموع: 0.00 ج.م</div>
-    </div>
-  </div>
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
