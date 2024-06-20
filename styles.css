@@ -70,3 +70,32 @@ h1 {
 .item .price {
   font-size: 1.35em;
 }
+#cart {
+  width: 100%;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px; /* Add some space above the cart */
+}
+
+#cart h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#cart-items {
+  list-style: none;
+  padding: 0;
+}
+
+#cart-items li {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+#cart-total {
+  text-align: right;
+  font-weight: bold;
+  margin-top: 10px;
+}
