@@ -1,3 +1,4 @@
+
 let cartItems = [];
 let cartTotal = 0;
 
@@ -32,7 +33,7 @@ function displayCartItems() {
     listItem.innerHTML = `
       <span class="item-name">${item.name}</span>
       <span class="item-quantity">x ${item.quantity}</span>
-      <span class="item-price">${item.price.toFixed(2)} ريال</span>
+      <span class="item-price">${item.price.toFixed(2)} ج.م</span>
     `;
     cartItemsList.appendChild(listItem);
   });
@@ -76,18 +77,18 @@ document.addEventListener("DOMContentLoaded", function() {
       itemElement.innerHTML = itemContent;
       billContainer.appendChild(itemElement);
     });
-  }
 
-  // Add event listener for "Add to Cart" buttons
-  document.querySelectorAll('.add-to-cart').forEach(addToCartBtn => {
-    addToCartBtn.addEventListener('click', () => {
-      const itemId = addToCartBtn.dataset.itemId;
-      const itemData = allData.find(item => item.id === itemId);
-      if (itemData) {
-        addToCart(itemData);
-      } else {
-        console.error("Couldn't find item data for ID:", itemId);
-      }
+    // Add event listener for "Add to Cart" buttons after they are added to the DOM
+    document.querySelectorAll('.add-to-cart').forEach(addToCartBtn => {
+      addToCartBtn.addEventListener('click', () => {
+        const itemId = addToCartBtn.dataset.itemId;
+        const itemData = allData.find(item => item.id === itemId);
+        if (itemData) {
+          addToCart(itemData);
+        } else {
+          console.error("Couldn't find item data for ID:", itemId);
+        }
+      });
     });
-  });
+  }
 });
